@@ -13,7 +13,7 @@ covert-channel:	sender receiver
 sender:	covert_channel/sender.o lib/util.o
 	$(CC) $^ -o $@
 
-receiver:	covert_channel/receiver.o lib/util.o
+receiver: covert_channel/receiver.o lib/util.o
 	$(CC)  $^ -o $@
 
 
